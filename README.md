@@ -1,2 +1,2 @@
-# creator
+# Studio
 Content creation studio.
