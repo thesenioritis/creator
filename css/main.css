@@ -556,11 +556,46 @@ img {
   padding: 5px 0 5px 0;
   border: 0;
   border-bottom: 2px solid #999;
+  color: #2980b9;
 }
 
 .form input:focus {
   outline: none;
   border-bottom: 2px solid #2980b9;
+}
+
+.form textarea {
+  display: block;
+  font-size: 14pt;
+  font-family: 'Proxima Nova';
+  width: 100%;
+  padding: 5px 0 5px 0;
+  border: 0;
+  border-bottom: 2px solid #999;
+  color: #2980b9;
+}
+
+.form textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #2980b9;
+}
+
+.form button {
+  width: 100%;
+  color: white;
+  font-family: 'Proxima Nova';
+  font-size: 16pt;
+  background: #2980b9;
+  padding: 10px;
+  border: 0;
+}
+
+.form button:hover {
+  cursor: pointer;
+}
+
+.form button:active {
+  background: #3498db;
 }
 
 /* ==========================================================================

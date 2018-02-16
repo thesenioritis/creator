@@ -56,6 +56,23 @@
               <b>Who are the guests?</b> (e.g. Zac Sanders, Shaan Singh)
               <input type="text" id="guests" placeholder="Guests" />
             </div>
+            <div class="question">
+              <b>What will the primary photo be?</b> (upload file)
+              <input type="file" id="primaryPhoto" onchange="processFile()" />
+            </div>
+            <div class="question">
+              <b>What will the funny photo be?</b> (upload file)
+              <input type="file" id="altPhoto" onchange="processFile()" />
+            </div>
+            <div class="question">
+              <b>What will the body text of the episode be?</b> (e.g. quote, etc.)
+              <textarea id="bodyText" placeholder="Body text."></textarea>
+            </div>
+            <div class="question">
+              <b>Episode <a href="https://help.soundcloud.com/hc/en-us/articles/115003568008-Embedding-a-track-or-playlist-">embed code</a>.</b> (e.g. SoundCloud, YouTube, etc.)
+              <textarea id="embedCode" placeholder="Embed code."></textarea>
+            </div>
+            <button id="submit">Generate</button>
           </div>
 
         </div>
