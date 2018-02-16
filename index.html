@@ -29,7 +29,7 @@
       <h1>Studio</h1>
       <p class="lead">
         Henry M. Gunn High School &middot; Palo Alto, CA<br />
-        <span class="hosts">Where the magic behind <a href="https://senioritis.us">Senioritis</a> happens.</span>
+        <span class="hosts">Where the magic behind <a target="_blank" href="https://senioritis.us">Senioritis</a> happens.</span>
       </p>
     </div>
   </div>
@@ -69,7 +69,7 @@
         <textarea id="bodyText" placeholder="Body text."></textarea>
       </div>
       <div class="question">
-        <b>Episode <a href="https://help.soundcloud.com/hc/en-us/articles/115003568008-Embedding-a-track-or-playlist-">embed code</a>.</b> (e.g. SoundCloud, YouTube, etc.)
+        <b>Episode <a target="_blank" href="https://help.soundcloud.com/hc/en-us/articles/115003568008-Embedding-a-track-or-playlist-">embed code</a>.</b> (e.g. SoundCloud, YouTube, etc.)
         <textarea id="embedCode" placeholder="Embed code."></textarea>
       </div>
       <button id="submit" onclick="generateFile()">Generate</button>
@@ -83,7 +83,7 @@
     <div class="three columns"></div>
     <div class="six columns">
       <div class="wallet">
-        Built by <a href="https://gautam.cc">@gmittal</a>.<br />
+        Built by <a target="_blank" href="https://gautam.cc">@gmittal</a>.<br />
         &copy; 2018-present Senioritis Studio.
       </div>
     </div>
@@ -95,6 +95,8 @@
 <script src="js/pikaday.min.js"></script>
 <script src="js/download.js"></script>
 <script>
+  require('./renderer.js')
+
   var template = `---START_METADATA---
   {
     "title": "{EPISODE-TITLE}",
