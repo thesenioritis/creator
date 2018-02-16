@@ -46,23 +46,23 @@
           <div class="form">
             <div class="question">
               <b>What is the date of the episode?</b> (e.g. February 12, 2018)
-              <input type="text" id="date" placeholder="Episode Date" />
+              <input type="text" id="date" placeholder="Episode Date" required/>
             </div>
             <div class="question">
               <b>What is the title of the episode?</b> (e.g. Musical Chairs)
-              <input type="text" id="episodeTitle" placeholder="Episode Title" />
+              <input type="text" id="episodeTitle" placeholder="Episode Title" required/>
             </div>
             <div class="question">
               <b>Who are the guests?</b> (e.g. Zac Sanders, Shaan Singh)
-              <input type="text" id="guests" placeholder="Guests" />
+              <input type="text" id="guests" placeholder="Guests" required/>
             </div>
             <div class="question">
               <b>What will the primary photo be?</b> (upload file)
-              <input type="file" id="primaryPhoto" onchange="processFile()" />
+              <input type="file" id="primaryPhoto" onchange="processFile()" required/>
             </div>
             <div class="question">
               <b>What will the funny photo be?</b> (upload file)
-              <input type="file" id="altPhoto" onchange="processFile()" />
+              <input type="file" id="altPhoto" onchange="processFile()" required/>
             </div>
             <div class="question">
               <b>What will the body text of the episode be?</b> (e.g. quote, etc.)
@@ -93,6 +93,7 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
       <script src="/js/moment.min.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+      <script src="http://danml.com/js/download.js"></script>
       <script>
         var picker = new Pikaday({ field: document.getElementById('date') });
       </script>
