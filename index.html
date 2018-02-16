@@ -1,109 +1,178 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Senioritis Studio</title>
-        <meta name="description" content="Senioritis: A Gunn High School student podcast featuring seniors talking about life and high school. Hosted by Thomas Burton and Kevin Huang.">
-        <meta property="og:description" content="Senioritis: A Gunn High School student podcast featuring seniors talking about life and high school. Hosted by Thomas Burton and Kevin Huang." />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#000000" />
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Senioritis Studio</title>
+<meta name="description" content="Senioritis: A Gunn High School student podcast featuring seniors talking about life and high school. Hosted by Thomas Burton and Kevin Huang.">
+<meta property="og:description" content="Senioritis: A Gunn High School student podcast featuring seniors talking about life and high school. Hosted by Thomas Burton and Kevin Huang." />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000" />
 
-        <link rel="apple-touch-icon" href="/img/apple-touch-icon-precomposed.png">
-        <link rel="icon" type="image/png" href="/img/favicon.png">
-        <link rel="stylesheet" href="/css/main.css">
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
-    </head>
-    <body>
-      <!--[if lt IE 8]>
-          <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-      <![endif]-->
+<link rel="apple-touch-icon" href="/img/apple-touch-icon-precomposed.png">
+<link rel="icon" type="image/png" href="/img/favicon.png">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
-      <hr id="starter" />
+<hr id="starter" />
 
-      <div id="header">
-        <div class="row">
-          <div class="three columns"></div>
-          <div class="six columns">
-            <img id="logo" src="/img/logo.png" />
-            <h1>Studio</h1>
-            <p class="lead">
-              Henry M. Gunn High School &middot; Palo Alto, CA<br />
-              <span class="hosts">Where the magic behind <a href="https://senioritis.us">Senioritis</a> happens.</span>
-            </p>
-          </div>
-        </div>
+<div id="header">
+  <div class="row">
+    <div class="three columns"></div>
+    <div class="six columns">
+      <img id="logo" src="/img/logo.png" />
+      <h1>Studio</h1>
+      <p class="lead">
+        Henry M. Gunn High School &middot; Palo Alto, CA<br />
+        <span class="hosts">Where the magic behind <a href="https://senioritis.us">Senioritis</a> happens.</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="row contentArea blogArea">
+  <div class="three columns"></div>
+  <div class="six columns">
+    <h2>
+      Create New Post
+    </h2>
+    Woohoo! I'm so excited for the next episode. Please fill out the webform to compose a new post.<br />
+
+    <div class="form">
+      <div class="question">
+        <b>What is the date of the episode?</b> (e.g. February 12, 2018)
+        <input type="text" id="date" placeholder="Episode Date" required/>
       </div>
-
-      <div class="row contentArea blogArea">
-        <div class="three columns"></div>
-        <div class="six columns">
-          <h2>
-            Create New Post
-          </h2>
-          Woohoo! I'm so excited for the next episode. Please fill out the webform to compose a new post.<br />
-
-          <div class="form">
-            <div class="question">
-              <b>What is the date of the episode?</b> (e.g. February 12, 2018)
-              <input type="text" id="date" placeholder="Episode Date" required/>
-            </div>
-            <div class="question">
-              <b>What is the title of the episode?</b> (e.g. Musical Chairs)
-              <input type="text" id="episodeTitle" placeholder="Episode Title" required/>
-            </div>
-            <div class="question">
-              <b>Who are the guests?</b> (e.g. Zac Sanders, Shaan Singh)
-              <input type="text" id="guests" placeholder="Guests" required/>
-            </div>
-            <div class="question">
-              <b>What will the primary photo be?</b> (upload file)
-              <input type="file" id="primaryPhoto" onchange="processFile()" required/>
-            </div>
-            <div class="question">
-              <b>What will the funny photo be?</b> (upload file)
-              <input type="file" id="altPhoto" onchange="processFile()" required/>
-            </div>
-            <div class="question">
-              <b>What will the body text of the episode be?</b> (e.g. quote, etc.)
-              <textarea id="bodyText" placeholder="Body text."></textarea>
-            </div>
-            <div class="question">
-              <b>Episode <a href="https://help.soundcloud.com/hc/en-us/articles/115003568008-Embedding-a-track-or-playlist-">embed code</a>.</b> (e.g. SoundCloud, YouTube, etc.)
-              <textarea id="embedCode" placeholder="Embed code."></textarea>
-            </div>
-            <button id="submit">Generate</button>
-          </div>
-
-        </div>
+      <div class="question">
+        <b>What is the title of the episode?</b> (e.g. Musical Chairs)
+        <input type="text" id="episodeTitle" placeholder="Episode Title" required/>
       </div>
-
-      <div id="footer">
-        <div class="row">
-          <div class="three columns"></div>
-          <div class="six columns">
-      	    <div class="wallet">
-              Built by <a href="https://gautam.cc">@gmittal</a>.<br />
-              &copy; 2018-present Senioritis Studio.
-      	    </div>
-          </div>
-        </div>
+      <div class="question">
+        <b>Who are the guests?</b> (e.g. Zac Sanders, Shaan Singh)
+        <input type="text" id="guests" placeholder="Guests" required/>
       </div>
+      <div class="question">
+        <b>What will the primary photo be?</b> (upload file)
+        <input type="file" id="primaryPhoto" onchange="processImage()" required/>
+      </div>
+      <div class="question">
+        <b>What will the funny photo be?</b> (upload file)
+        <input type="file" id="altPhoto" onchange="processAlt()" required/>
+      </div>
+      <div class="question">
+        <b>What will the body text of the episode be?</b> (e.g. quote, etc.)
+        <textarea id="bodyText" placeholder="Body text."></textarea>
+      </div>
+      <div class="question">
+        <b>Episode <a href="https://help.soundcloud.com/hc/en-us/articles/115003568008-Embedding-a-track-or-playlist-">embed code</a>.</b> (e.g. SoundCloud, YouTube, etc.)
+        <textarea id="embedCode" placeholder="Embed code."></textarea>
+      </div>
+      <button id="submit" onclick="generateFile()">Generate</button>
+    </div>
 
-      <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-      <script src="/js/moment.min.js"></script>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
-      <script src="http://danml.com/js/download.js"></script>
-      <script>
-        var picker = new Pikaday({ field: document.getElementById('date') });
-      </script>
-      <script>
-          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-          e.src='//www.google-analytics.com/analytics.js';
-          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-          ga('create','UA-113480029-1','auto');ga('send','pageview');
-      </script>
-    </body>
+  </div>
+</div>
+
+<div id="footer">
+  <div class="row">
+    <div class="three columns"></div>
+    <div class="six columns">
+      <div class="wallet">
+        Built by <a href="https://gautam.cc">@gmittal</a>.<br />
+        &copy; 2018-present Senioritis Studio.
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="/js/moment.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+<script src="http://danml.com/js/download.js"></script>
+<script>
+  var template = `---START_METADATA---
+  {
+    "title": "{EPISODE-TITLE}",
+    "guests": "{GUESTS}",
+    "image": "{IMAGE}",
+    "altimage": "{ALT-IMAGE}"
+  }
+  ---END_METADATA---
+  {BODY}
+
+  {EMBED-CODE}
+  <br />`;
+
+  var picker = new Pikaday({ field: document.getElementById('date') });
+  var primaryImage = "";
+  var altImage = "";
+
+  function generateFile() {
+    var date = picker.toString();
+    var title = document.getElementById('episodeTitle').value;
+    var slug = slugify(title);
+    var guests = document.getElementById('guests').value;
+    var body = document.getElementById('bodyText').value;
+    var embed = document.getElementById('embedCode').value;
+
+    const final = template
+                   .replace(/{EPISODE-TITLE}/g, title)
+                   .replace(/{GUESTS}/g, guests)
+                   .replace(/{IMAGE}/g, primaryImage)
+                   .replace(/{ALT-IMAGE}/g, altImage)
+                   .replace(/{BODY}/g, body)
+                   .replace(/{EMBED-CODE}/g, embed);
+
+    download(final, `${date}-${slug}.md`, "text/markdown");
+  }
+
+  function slugify(text) {
+    return text.toString().toLowerCase()
+      .replace(/\s+/g, '-')           // Replace spaces with -
+      .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
+      .replace(/\-\-+/g, '-')         // Replace multiple - with single -
+      .replace(/^-+/, '')             // Trim - from start of text
+      .replace(/-+$/, '');            // Trim - from end of text
+  }
+
+  function processImage() {
+    var file = document.querySelector('#primaryPhoto').files[0];
+    var reader = new FileReader();
+
+    reader.addEventListener("load", function () {
+      primaryImage = reader.result;
+    }, false);
+
+    if (file) {
+      reader.readAsDataURL(file);
+    }
+  }
+
+  function processAlt() {
+    var file = document.querySelector('#altPhoto').files[0];
+    var reader = new FileReader();
+
+    reader.addEventListener("load", function () {
+      altImage = reader.result;
+    }, false);
+
+    if (file) {
+      reader.readAsDataURL(file);
+    }
+  }
+</script>
+<script>
+(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='//www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-113480029-1','auto');ga('send','pageview');
+  </script>
+</body>
 </html>
